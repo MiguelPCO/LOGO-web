@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stark Industries Shop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              science: ['"Science Gothic"', "sans-serif"],
+            },
+            colors: {
+              "stark-gray": "#e5e5e5",
+            },
+          },
+        },
+      };
+    </script>
+    </style>
+  </head>
+  <body class="bg-white text-black max-w-[1280px] mx-auto border-[3px] border-black m-2  flex flex-col justify-between">
+    <header
+      class="h-[70vh] flex items-center justify-center border-b border-black"
+    >
+      <h1 class="text-4xl md:text-5xl tracking-super-tight"">
+        Plain white shop
+      </h1>
+    </header>
+
+    <section
+      class="relative bg-gradient-to-b from-gray-200 via-gray-300 to-gray-400 py-10 md:px-12 border-y-2 border-black"
+    >
+      <div
+        class="mx-auto tracking-super-tight grid grid-cols-1 md:grid-cols-3 gap-24"
+      >
+        <article class="flex flex-col items-start gap-6">
+          <h2 class="text-3xl  leading-none">
+            Product<br />Circulizer
+          </h2>
+          <button class="btn-brutal px-6 py-2 text-lg font-medium">
+            Add to cart
+          </button>
+        </article>
+
+        <article class="flex flex-col items-start gap-6">
+          <h2 class="text-3xl leading-none">Darkshield<br />AI</h2>
+          <button class="btn-brutal px-6 py-2 text-lg font-medium">
+            Add to cart
+          </button>
+        </article>
+
+        <article class="flex flex-col items-start gap-6">
+          <h2 class="text-3xl leading-none">Risk<br />Network</h2>
+          <button class="btn-brutal px-6 py-2 text-lg font-medium">
+            Add to cart
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div
+        class="max-w-7xl mx-auto tracking-super-tight flex flex-wrap justify-between items-center  text-sm md:text-base font-semibold px-4"
+      >
+        <span class="-ml-20">business1</span>
+        <span class="">business2</span>
+        <span class="">business3</span>
+
+        <div class="text-center">
+          <h3
+            class="text-4xl font-[800] tracking-super-tight "
+          >
+            used here, <br/>
+            used there <br/>
+            used everywhere
+          </h3>
+        </div>
+        <span>business4</span>
+        <span>business5</span>
+        <span class="-mr-20">business6</span>
+      </div>
+    </section>
+
+    <footer class="pb-16 pt-8 text-center flex flex-col items-center gap-6">
+      <p class="text-xl tracking-super-tight md:text-4xl font-[900] mb-1">copyright 2025</p>
+
+      <div class="w-48">
+        <svg viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20,10 L300,10 L260,60 L0"
+            fill="none"
+            stroke="black"
+            stroke-width="4"
+          />
+          <text
+            x="150"
+            y="32"
+            font-family="Science Gothic, sans-serif"
+            font-size="20"
+            font-weight="bold"
+            text-anchor="middle"
+            fill="black"
+          >
+            STARK INDUSTRIES
+          </text>
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>

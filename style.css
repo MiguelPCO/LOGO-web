@@ -1,0 +1,14 @@
+body {
+  font-family: "Science Gothic", sans-serif;
+}
+.btn-brutal {
+  border: 2px solid black;
+  transition: all 0.2s ease;
+}
+.btn-brutal:hover {
+  background-color: black;
+  color: white;
+}
+.tracking-super-tight {
+  letter-spacing: -0.12em;
+}
